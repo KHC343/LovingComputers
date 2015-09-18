@@ -13,6 +13,8 @@
 		3FDC2C791BAB085A000F1D48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FDC2C781BAB085A000F1D48 /* Images.xcassets */; };
 		3FDC2C7C1BAB085A000F1D48 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FDC2C7A1BAB085A000F1D48 /* LaunchScreen.xib */; };
 		3FDC2C881BAB085A000F1D48 /* ComputerLovingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDC2C871BAB085A000F1D48 /* ComputerLovingTests.swift */; };
+		3FDC2C921BAB09DA000F1D48 /* DialougeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDC2C911BAB09DA000F1D48 /* DialougeViewController.swift */; };
+		3FEF71891BAC547200A3DC97 /* MCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF71881BAC547200A3DC97 /* MCViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		3FDC2C811BAB085A000F1D48 /* ComputerLovingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComputerLovingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FDC2C861BAB085A000F1D48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FDC2C871BAB085A000F1D48 /* ComputerLovingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerLovingTests.swift; sourceTree = "<group>"; };
+		3FDC2C911BAB09DA000F1D48 /* DialougeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialougeViewController.swift; sourceTree = "<group>"; };
+		3FEF71881BAC547200A3DC97 /* MCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 			children = (
 				3FDC2C711BAB085A000F1D48 /* AppDelegate.swift */,
 				3FDC2C731BAB085A000F1D48 /* ViewController.swift */,
+				3FDC2C911BAB09DA000F1D48 /* DialougeViewController.swift */,
+				3FEF71881BAC547200A3DC97 /* MCViewController.swift */,
 				3FDC2C751BAB085A000F1D48 /* Main.storyboard */,
 				3FDC2C781BAB085A000F1D48 /* Images.xcassets */,
 				3FDC2C7A1BAB085A000F1D48 /* LaunchScreen.xib */,
@@ -156,7 +162,8 @@
 		3FDC2C641BAB085A000F1D48 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = LateNightGames;
 				TargetAttributes = {
 					3FDC2C6B1BAB085A000F1D48 = {
@@ -212,7 +219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FEF71891BAC547200A3DC97 /* MCViewController.swift in Sources */,
 				3FDC2C741BAB085A000F1D48 /* ViewController.swift in Sources */,
+				3FDC2C921BAB09DA000F1D48 /* DialougeViewController.swift in Sources */,
 				3FDC2C721BAB085A000F1D48 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +285,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -342,6 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ComputerLoving/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LHG.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -352,6 +363,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ComputerLoving/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LHG.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -370,6 +382,7 @@
 				);
 				INFOPLIST_FILE = ComputerLovingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LHG.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComputerLoving.app/ComputerLoving";
 			};
@@ -385,6 +398,7 @@
 				);
 				INFOPLIST_FILE = ComputerLovingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LHG.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComputerLoving.app/ComputerLoving";
 			};
@@ -409,6 +423,7 @@
 				3FDC2C8D1BAB085A000F1D48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FDC2C8E1BAB085A000F1D48 /* Build configuration list for PBXNativeTarget "ComputerLovingTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +432,7 @@
 				3FDC2C901BAB085A000F1D48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
