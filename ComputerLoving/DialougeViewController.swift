@@ -18,6 +18,7 @@ class DialougeViewController: UIViewController {
     @IBOutlet weak var Choice4: UIButton!
     var Mc = MCViewController()
     var count = 0
+    var personality = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         Choice1.setTitle("", forState: UIControlState.Normal)
@@ -67,6 +68,26 @@ class DialougeViewController: UIViewController {
             Choice2.setTitle("Pout", forState: UIControlState.Normal)
             Choice3.setTitle("Give up", forState: UIControlState.Normal)
             Choice4.setTitle("Look on the bright side", forState: UIControlState.Normal)
+        }
+        if (count == 9)
+        {
+            personality = Int(Mc.findGreatest())
+            if(personality == 1)
+            {
+                TextField.text = "“AAAAAAHHHHH!” I yelled in anger and slammed my hands down on the table."
+            }
+            if(personality == 2)
+            {
+                TextField.text = "“This sucks.” Like really really sucks. Leaning my head back, I close my eyes."
+            }
+            if(personality == 3)
+            {
+                TextField.text = "(Thump) I collapse. I put my head on the desk and sighed. “I guess this is how my life is.”"
+            }
+            if(personality == 4)
+            {
+                TextField.text = "(Slap) I hit myself in my face. “Hey it could be worse. I could be dead.” I gave a little chuckle, trying to lighten my mood."
+            }
         }
     }
     @IBAction func Choice1(sender: AnyObject) {

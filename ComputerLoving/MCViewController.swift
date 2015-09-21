@@ -16,6 +16,7 @@ class MCViewController: UIViewController {
     var four = 0
     var gender = 0
     var name = ""
+    var greatest = 0
     
     convenience init(MCname: String, Gender: Int)
     {
@@ -23,7 +24,23 @@ class MCViewController: UIViewController {
         self.gender = 0
         self.name = MCname
     }
-    
-    
-
+    func findGreatest()
+    {
+        if (one > two && one > three && one > four)
+        {
+            greatest = 1
+        }
+        if (two > one && two > three && two > four)
+        {
+            greatest = 2
+        }
+        if (three > one && three > two && three > four)
+        {
+            greatest = 3
+        }
+        if (four > two && four > three && four > one)
+        {
+            greatest = 4
+        }
+    }
 }
