@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yr2-fD-C5h">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
@@ -18,12 +18,12 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9w-8m-MNK">
-                                <rect key="frame" x="166" y="378" width="46" height="32"/>
+                                <rect key="frame" x="184" y="375" width="46" height="32"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fAP-nH-Ek9" kind="show" id="YSA-GJ-dJ7"/>
+                                    <segue destination="hMR-s4-9br" kind="show" id="IZt-bY-xqK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -35,7 +35,78 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1209" y="-440"/>
+            <point key="canvasLocation" x="1333" y="-436"/>
+        </scene>
+        <!--Dialouge View Controller-->
+        <scene sceneID="0E0-bU-ycG">
+            <objects>
+                <viewController id="hMR-s4-9br" customClass="DialougeViewController" customModule="ComputerLoving" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bvB-lL-Zf4"/>
+                        <viewControllerLayoutGuide type="bottom" id="29b-mv-hos"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cxi-kw-YY5">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X41-Ff-cJ0">
+                                <rect key="frame" x="322" y="95" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="Choice1:" destination="hMR-s4-9br" eventType="touchUpInside" id="JAW-4y-rO3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfK-po-rNY">
+                                <rect key="frame" x="322" y="133" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="Choice2:" destination="hMR-s4-9br" eventType="touchUpInside" id="PtF-cc-tyS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcV-K7-Svq">
+                                <rect key="frame" x="322" y="171" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="Choice3:" destination="hMR-s4-9br" eventType="touchUpInside" id="heN-VI-8Am"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybc-o3-GLO">
+                                <rect key="frame" x="322" y="209" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="Choice4:" destination="hMR-s4-9br" eventType="touchUpInside" id="qML-Dm-eAu"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8Ih-6e-RJz">
+                                <rect key="frame" x="225" y="257" width="240" height="128"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeB-0T-PaO">
+                                <rect key="frame" x="451" y="219" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="hMR-s4-9br" eventType="touchUpInside" id="lRf-wN-IUi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="Choice1" destination="X41-Ff-cJ0" id="jWU-GL-Dcx"/>
+                        <outlet property="Choice2" destination="IfK-po-rNY" id="VDk-qr-nH6"/>
+                        <outlet property="Choice3" destination="tcV-K7-Svq" id="hab-6C-eEO"/>
+                        <outlet property="Choice4" destination="Ybc-o3-GLO" id="Dg3-SJ-ox0"/>
+                        <outlet property="nextButtonStuff" destination="yeB-0T-PaO" id="jGe-T4-VCj"/>
+                        <outlet property="textView" destination="8Ih-6e-RJz" id="HVF-3f-JvZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NhB-q6-amv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2236" y="-387"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7yz-4X-x9q">
@@ -54,9 +125,6 @@
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="DAp-65-gs2" kind="show" id="cki-6R-UNk"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -65,80 +133,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mnG-Nh-j3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1724" y="-440"/>
-        </scene>
-        <!--Dialouge View Controller-->
-        <scene sceneID="53c-pr-dV5">
-            <objects>
-                <viewController id="DAp-65-gs2" customClass="DialougeViewController" customModule="ComputerLoving" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="rru-ay-Glv"/>
-                        <viewControllerLayoutGuide type="bottom" id="kbF-04-wdH"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="d2G-7V-vhY">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Confidence" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1my-NF-CPf">
-                                <rect key="frame" x="102" y="245" width="533" height="161"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvG-jk-CYs">
-                                <rect key="frame" x="298" y="103" width="140" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="Choice1:" destination="DAp-65-gs2" eventType="touchUpInside" id="wmp-nX-hwO"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kY2-IM-YwE">
-                                <rect key="frame" x="677" y="364" width="32" height="30"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="Next:" destination="DAp-65-gs2" eventType="touchUpInside" id="hgJ-Oe-Z5D"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iij-O6-YE2">
-                                <rect key="frame" x="678" y="326" width="30" height="30"/>
-                                <state key="normal" title="Skip"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ai0-EC-GXT">
-                                <rect key="frame" x="298" y="136" width="140" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="Choice2:" destination="DAp-65-gs2" eventType="touchUpInside" id="vPZ-vI-THq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xC-gk-NcT">
-                                <rect key="frame" x="298" y="169" width="140" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="Choice3:" destination="DAp-65-gs2" eventType="touchUpInside" id="brf-us-WDI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8g-Jr-4Tj">
-                                <rect key="frame" x="298" y="201" width="140" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="Choice4:" destination="DAp-65-gs2" eventType="touchUpInside" id="efj-8d-5vf"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <connections>
-                        <outlet property="Choice1" destination="BvG-jk-CYs" id="QcK-2o-gz3"/>
-                        <outlet property="Choice2" destination="Ai0-EC-GXT" id="EHn-iT-eHa"/>
-                        <outlet property="Choice3" destination="5xC-gk-NcT" id="ktk-8V-TRe"/>
-                        <outlet property="Choice4" destination="N8g-Jr-4Tj" id="lzw-iB-M7u"/>
-                        <outlet property="NextButton" destination="kY2-IM-YwE" id="aOb-tG-Hex"/>
-                        <outlet property="TextField" destination="1my-NF-CPf" id="Ujr-zZ-phW"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3ya-wv-sAz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2510" y="-433"/>
+            <point key="canvasLocation" x="2076" y="-1327"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6Ic-JZ-Oak">
@@ -156,7 +151,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wtP-At-LIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="592" y="-440"/>
+            <point key="canvasLocation" x="554" y="-414"/>
         </scene>
     </scenes>
 </document>
